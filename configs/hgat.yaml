@@ -1,0 +1,12 @@
+model: {
+  in_channels: 768,
+  hidden_channels: 128,
+  out_channels: 2,
+  n_heads: 4,
+  dropout: 0.2,
+}
+opt: {
+  learning_rate: 0.001,
+  epochs: 1000,
+  weight_decay: 0.025,
+}
