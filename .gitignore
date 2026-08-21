@@ -1,5 +1,42 @@
-*.pth
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# macOS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Generated features and intermediate data
+out/
+processed/
 data/processed/
+data/training/train.csv
+data/test/test.csv
+
+# Model artefacts
+ckpt/
+models/pretrained/
 *.pth
-data/processed/
-*.pth
+*.ckpt
+
+# Predictions and submissions
+data/submission/
+data/predicted_labels.json
+data/raw/test_labels_naive_baseline.json
+data/raw/test_labels_text_baseline.json
+
+# Experiment tracking
+wandb/
+lightning_logs/

@@ -1,0 +1,39 @@
+# Python 3.10. Versions are left unpinned - run `pip freeze` from a working
+# environment if you need the exact ones.
+
+# Core
+numpy
+pandas
+scikit-learn
+PyYAML
+tqdm
+
+# PyTorch and graph learning
+torch
+torch-geometric
+torcheval
+torchtext
+lightning
+wandb                 # lightning.pytorch.loggers.WandbLogger in scripts/train_predict.py
+balanced-loss         # class-balanced CE in scripts/hgat_train.py
+
+# Embeddings
+sentence-transformers
+transformers
+
+# Text processing
+nltk                  # stopwords, word_tokenize, ngrams, SnowballStemmer
+autocorrect           # Speller
+contractions
+
+# Plotting and exploration (notebooks, tools/explore_data.py)
+matplotlib
+seaborn
+networkx
+
+# CLI
+jsonargparse          # scripts/make_submission.py
+
+# Only needed for the older DGL experiments: models/GCN.py, models/rgcn.py,
+# scripts/RGCN_script.py, scripts/processing.py, scripts/testing.py
+dgl
